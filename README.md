@@ -1,5 +1,5 @@
 # ansible-task
-
+ 
 cd /etc/ansible 
 is a default file in which we have ansible invertory and ansible.cfg file 
 
