@@ -1,0 +1,11 @@
+- name: Configure Docker daemon
+  hosts: all
+  become: yes
+  tasks:
+    - name: Copy daemon.json to /etc/docker/
+      copy:
+        src: daemon.json
+        dest: /etc/docker/daemon.json
+        owner: root
+        group: root
+        mode: '0644'
